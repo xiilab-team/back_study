@@ -1,15 +1,14 @@
 package com.example.demo.member;
 
 import com.example.demo.team.TeamEntity;
-import lombok.AccessLevel;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 
 @Entity(name = "TB_MEMBER")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
+@AllArgsConstructor
+@Builder
 @Getter
 public class MemberEntity {
     @Id
@@ -26,5 +25,9 @@ public class MemberEntity {
         this.name = requestDTO.getName();
         this.job = requestDTO.getJob();
         this.team = team;
+    }
+
+    public void updateJob(Job job) {
+        this.job = job;
     }
 }
