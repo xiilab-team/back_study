@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.common;
 
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 import org.springframework.http.HttpStatus;

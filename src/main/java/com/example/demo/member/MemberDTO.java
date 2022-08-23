@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.member;
 
 import lombok.*;
 
@@ -13,6 +13,7 @@ public class MemberDTO {
         @NotNull(message = "이름이 null일순 없습니다.")
         private String name;
         private Job job;
+        private Long teamId;
     }
 
     @Builder
@@ -22,6 +23,15 @@ public class MemberDTO {
         private Long id;
         private String name;
         private Job job;
+        private Long teamId;
+
+        @Builder(builderMethodName = "convertDTO", builderClassName = "convertDTO")
+        public MemberResponseDTO (MemberEntity member) {
+            this.id = member.getId();
+            this.name = member.getName();
+            this.job = member.getJob();
+            this.teamId = member.getTeam().getId();
+        }
     }
 
 

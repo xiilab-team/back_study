@@ -1,11 +1,10 @@
-package com.example.demo;
+package com.example.demo.member;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Repository
 @Slf4j
