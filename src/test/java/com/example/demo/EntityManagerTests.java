@@ -1,8 +1,8 @@
 package com.example.demo;
 
-import com.example.demo.member.Job;
-import com.example.demo.member.MemberDTO;
-import com.example.demo.member.MemberEntity;
+import com.example.demo.member.enumeration.Job;
+import com.example.demo.member.dto.MemberDTO;
+import com.example.demo.member.entity.MemberEntity;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +13,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 
 @SpringBootTest
-public class EntityManagerTests {
+class EntityManagerTests {
     @Autowired
     private EntityManagerFactory entityManagerFactory;
 

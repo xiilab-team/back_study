@@ -1,5 +1,7 @@
-package com.example.demo.member;
+package com.example.demo.member.entity;
 
+import com.example.demo.member.enumeration.Job;
+import com.example.demo.member.dto.MemberDTO;
 import com.example.demo.team.TeamEntity;
 import lombok.*;
 

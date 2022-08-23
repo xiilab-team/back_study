@@ -1,5 +1,7 @@
-package com.example.demo.member;
+package com.example.demo.member.dto;
 
+import com.example.demo.member.enumeration.Job;
+import com.example.demo.member.entity.MemberEntity;
 import lombok.*;
 
 import javax.validation.constraints.NotNull;

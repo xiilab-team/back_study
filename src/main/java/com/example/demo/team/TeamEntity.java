@@ -1,6 +1,6 @@
 package com.example.demo.team;
 
-import com.example.demo.member.MemberEntity;
+import com.example.demo.member.entity.MemberEntity;
 import lombok.*;
 
 import javax.persistence.*;
